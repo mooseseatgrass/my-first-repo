@@ -1,0 +1,47 @@
+/*var goOutside;
+var weather = "bad";
+
+if(weather === "nice"){
+    goOutside = true;
+
+} else {
+    goOutside = false;
+}
+
+if (goOutside){
+    console.log("we are going outside");
+
+} else {
+    console.log("stay inside");
+}
+*/
+
+// getting to the bar
+
+var age;
+var haveId;
+var haveDriver;
+
+age = 2020 - 1995
+haveId = true;
+if(!isSad){
+    haveDriver = true;
+} else {
+    haveDriver = flase
+}
+
+if(age >= 21){
+    // keep going
+    if(haveId){
+        console.log("yay go to the bar");
+
+    }
+} else {
+    console.log("too young, so sad");
+}
+
+if( age> 21 && haveId && haveDriver){
+    console.log("go);
+} else {
+    
+}
