@@ -86,12 +86,24 @@ if(1 === 1 && count > 0 && count < 9){
 // The conditional statements put together save space but there are not as many path choices for what happens
 
 // Loop exercise HW
-var long = 3
-
-function print(){
-    while(long < 50);
-    long++;
+var i=0;
+while (i<=50){
+   if (i % 2 == 0){ 
+        console.log(i);
+    }
+    i++;
 }
+
+// Still need to do step 4
+
+// Function exercise
+
+function addNumbers(c, d){
+    return c + d;
+}
+ 
+
+
 
 
 
