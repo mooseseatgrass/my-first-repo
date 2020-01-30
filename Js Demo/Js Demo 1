@@ -41,7 +41,21 @@ if(age >= 21){
 }
 
 if( age> 21 && haveId && haveDriver){
-    console.log("go);
+    console.log("go");
 } else {
     
 }
+
+// going to lunch
+
+var haveMoney;
+var fastFood;
+var homeMade;
+var type;
+var restaurant;
+
+haveMoney = true;
+fastFood = false;
+homeMade = "starve";
+type = "burger;
+restuarant = "deli";
