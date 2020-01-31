@@ -106,18 +106,18 @@ if(1 === 1 && count > 0 && count < 9){
 // }
 
 
-for (var i = 0; i <= 100; i++){
-    if (i % 3 == 0 && i % 5 == 0){
-        console.log(i + "fizzbuzz");
-    } else {
-        if (i % 3 == 0){
-            console.log(i + "fizz");
-        }   else if (i % 5 == 0){
-            console.log(i + "buzz");
-        }
-    } 
-    console.log(i);
-}
+// for (var i = 0; i <= 100; i++){
+//     if (i % 3 == 0 && i % 5 == 0){
+//         console.log(i + "fizzbuzz");
+//     } else {
+//         if (i % 3 == 0){
+//             console.log(i + "fizz");
+//         }   else if (i % 5 == 0){
+//                 console.log(i + "buzz");
+//         }
+//     } 
+//     console.log(i);
+// }
 
 // Function exercise
 
@@ -129,8 +129,26 @@ function multiply(c, d){
     return c * d;
 }
 
+function myFuct(start,end){
+    for (var i = start; i <= end; i++){
+        console.log(i);
 
+    }
+}
+myFuct(4,10);
 
+var out= "pedal";
+
+function glow(inside){
+    return out + inside;
+}
+console.log(glow("seed"));
+
+// iife 
+
+(function(){
+    console.log("Sucess!");
+})();
 
 
 
