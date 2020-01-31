@@ -150,6 +150,17 @@ console.log(glow("seed"));
     console.log("Sucess!");
 })();
 
+function randomCheck(){
+    var green = document.getElementById('userInput').value;
+    var blue = Math.floor(Math.random() * 10);
+    if (green == blue){
+        console.log("Success!");
+    } else {
+        console.log("Boo!");
+    }
+
+
+    }
 
 
 
