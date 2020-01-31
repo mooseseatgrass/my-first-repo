@@ -86,22 +86,49 @@ if(1 === 1 && count > 0 && count < 9){
 // The conditional statements put together save space but there are not as many path choices for what happens
 
 // Loop exercise HW
-var i=0;
-while (i<=50){
-   if (i % 2 == 0){ 
-        console.log(i);
-    }
-    i++;
-}
+// var i=0;
+// while (i<=50){
+//     if (i % 2 == 0){ 
+//         console.log(i);
+//     }
+//     i++;
+// }
 
-// Still need to do step 4
+
+// if() {
+
+// } else {
+//     if() {
+
+//     } else if() {
+
+//     }
+// }
+
+
+for (var i = 0; i <= 100; i++){
+    if (i % 3 == 0 && i % 5 == 0){
+        console.log(i + "fizzbuzz");
+    } else {
+        if (i % 3 == 0){
+            console.log(i + "fizz");
+        }   else if (i % 5 == 0){
+            console.log(i + "buzz");
+        }
+    } 
+    console.log(i);
+}
 
 // Function exercise
 
 function addNumbers(c, d){
     return c + d;
 }
- 
+
+function multiply(c, d){
+    return c * d;
+}
+
 
 
 
