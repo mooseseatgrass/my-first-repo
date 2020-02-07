@@ -209,28 +209,44 @@ var groceryInv = [
 function cart(){
 
 }
+// Longer way of making it an object, next I'll try to make a contructor to add grocery items
+// var groceryObj = {
+//     "Banana"   : 10,
+//     "Onion"    : 4,
+//     "Tomato"   : 8,
+//     "Sugar"    : 1,
+//     "Apple"    : 29,
+//     "Oatmeal"  : 9,
+//     "Salt"     : 7,
+//     "Pepper"   : 83,
+//     "Hot Sauce": 37,
+//     "Litter"   : 3,
 
-var groceryObj = {
-    "Banana"   : 10,
-    "Onion"    : 4,
-    "Tomato"   : 8,
-    "Sugar"    : 1,
-    "Apple"    : 29,
-    "Oatmeal"  : 9,
-    "Salt"     : 7,
-    "Pepper"   : 83,
-    "Hot Sauce": 37,
-    "Litter"   : 3,
+//     function addInv(){
+//         let input = document.getElementById("userInput").value;
+//         groceryObj.forEach(groceryObj, function(){
+//             cart.push(groceryObj[1]);
+//             console.log(groceryObj[1]);
+//         });
+//     }
 
-    function addInv(){
-        let input = document.getElementById("userInput").value;
-        groceryObj.forEach(groceryObj, function(){
-            cart.push(groceryObj[1]);
-            console.log(groceryObj[1]);
-        });
+// }
+
+var groceryStock = {
+    item  : "item name",
+    qty   : "whole number",
+    price : "number with decimal",
+
+    function addStock(){
+        return ++groceryStock.qty
+    };
+    function subStock(){
+        return --groceryStock.qty
+    } else (i <= 0){
+        alert("Out of stock!");
     }
-
 }
+
 
 // var inNum = fruits.splice(inNum, count, i++); splice method I don't think I want to use
 
