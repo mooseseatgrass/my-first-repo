@@ -191,4 +191,63 @@ var grocery = {
 
 }
 
+
+
+var groceryInv = [
+    [10, "Bananas"], 
+    [4, "Onions"], 
+    [8, "Tomatoes"], 
+    [1, "Sugar"], 
+    [29, "Apples"], 
+    [9, "Oatmeal"], 
+    [7, "Salt"], 
+    [83, "Pepper"], 
+    [37, "Hot sauce"], 
+    [3, "Litter"]
+];
 */
+function cart(){
+
+}
+
+var groceryObj = {
+    "Banana"   : 10,
+    "Onion"    : 4,
+    "Tomato"   : 8,
+    "Sugar"    : 1,
+    "Apple"    : 29,
+    "Oatmeal"  : 9,
+    "Salt"     : 7,
+    "Pepper"   : 83,
+    "Hot Sauce": 37,
+    "Litter"   : 3,
+
+    function addInv(){
+        let input = document.getElementById("userInput").value;
+        groceryObj.forEach(groceryObj, function(){
+            cart.push(groceryObj[1]);
+            console.log(groceryObj[1]);
+        });
+    }
+
+}
+
+// var inNum = fruits.splice(inNum, count, i++); splice method I don't think I want to use
+
+
+function addInv(){
+    let input = document.getElementById("userInput").value;
+    groceryObj.forEach(groceryObj, function(){
+        cart.push(groceryObj[1]);
+        console.log(groceryObj[1]);
+    });
+}
+
+function subInv(){
+    let input = document.getElementById("userInput").value;
+    
+}
+
+function outInv(){
+
+}
