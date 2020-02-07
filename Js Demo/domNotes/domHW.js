@@ -19,3 +19,4 @@ document.getElementById("myBtn").addEventListener("click", function (){
     document.getElementById("listItemTwo").style.color = "yellow";
 });
 
+document.createElement('h2',"Second header");
