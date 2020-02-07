@@ -232,21 +232,38 @@ function cart(){
 
 // }
 
-var groceryStock = {
-    item  : "item name",
-    qty   : "whole number",
-    price : "number with decimal",
+// I don't think I created this contructor correctly, ask about it tomorrow
+// var groceryStock = {
+//     item  : "item name",
+//     qty   : "whole number",
+//     price : "number with decimal",
 
-    function addStock(){
-        return ++groceryStock.qty
+//     function addStock(){
+//         return ++groceryStock.qty
+//     };
+//     function subStock(){
+//         return --groceryStock.qty
+//     } else (i <= 0){
+//         alert("Out of stock!");
+//     }
+// }
+
+// Trying to creat the contructor again
+
+function GroceryStock(name, qty, price){
+    this.name = name;
+    this.qty = qty;
+    this.price = price;
+    this.addStock = function(){
+        return ++this.qty
     };
-    function subStock(){
-        return --groceryStock.qty
-    } else (i <= 0){
-        alert("Out of stock!");
-    }
-}
-
+    this.subStock = function(){
+        if (i = 0, i > 0, return --this.qty);
+            else (i <= 0);
+        {
+                alert("Out of stock!");
+    };
+};
 
 // var inNum = fruits.splice(inNum, count, i++); splice method I don't think I want to use
 
