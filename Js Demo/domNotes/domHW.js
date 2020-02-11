@@ -19,4 +19,15 @@ document.getElementById("myBtn").addEventListener("click", function (){
     document.getElementById("listItemTwo").style.color = "yellow";
 });
 
+document.getElementById("title").className = "bigTitle";
+document.getElementById("listItemThree").innerHTML = "changed thingymabob";
 document.createElement('h2',"Second header");
+
+
+
+document.getElementById("myList").addEventListener("click",
+    function(e){
+        e.target.classList.toggle("lightblue");
+        var lightblue = myList.style.background = "lightblue"
+    }
+);
