@@ -1,0 +1,47 @@
+article {
+    display: inline-block;
+}
+
+div {
+    /*width: 25em;*/
+    border: 5rem;
+    padding: 4rem;
+    margin: 4px;
+    background-color: yellow;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.column {
+   flex:50%;
+}
+
+.row{
+    display:flex;
+}
+
+span {
+    font-family: 'Odibee Sans', cursive;
+}
+
+p {
+    font-size: 20px;
+    font-family: helvetica;
+}
+
+section {
+    /*float: left;*/
+    padding: 4rem;
+}
+
+aside {
+    backgroud-image: url("");
+    padding: 5rem;
+    margin: .5rem;
+    float: right;
+}
+
+
+
