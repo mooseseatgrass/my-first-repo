@@ -1,0 +1,28 @@
+.container {
+    offset: 30px;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.container__child1 {
+    border: 1px solid green;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.container__child2 {
+    background-color: blueviolet;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+
+.container__grand {
+    background-color: pink;
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+}
