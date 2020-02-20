@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 4rem;
+    padding: 20vh;
+    color: whitesmoke
+}
+
+#caption{
+    color: red;
+}
