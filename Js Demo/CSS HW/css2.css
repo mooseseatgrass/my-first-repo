@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.img-banner {
+    width: 100%;
+}
+
+.img-ant {
+    width: 100%;
+}
+
+.img-info {
+    width: 100%;
+}
+
+@media only screen and (min-width: 768) {
+    .wrapper {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1000) {
+    .wrapper {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .img-info {
+        width: 50%;
+        float: right;
+    }
+    .img-ant {
+        width: 500px;
+        float: left;
+    }
+}

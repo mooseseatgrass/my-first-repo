@@ -94,3 +94,26 @@ nano hello.txt
 add, commit, push
 
 */
+
+document.getElementById("userName").style.fontFamily = "sans-serif";
+document.getElementById("userName").innerHTML="Billy";
+
+var buttons = document.myForm.radio;
+for (var i = 0; i < buttons.length; i++){
+  buttons[i].addEventListener('change', 
+ function changePicture(){
+  var defaulted = document.getElementById("defaulted").checked;
+  var round = document.getElementById("round").checked;
+  var larger = document.getElementById("larger").checked;
+  if(defaulted){
+    document.getElementById("userPicture").style.borderRadius = "0%";
+    document.getElementById("userPicture").style.width = 25vw;
+  }
+  if(round){
+    document.getElementById("userPicture").style.borderRadius = "50%";
+  }
+  if(larger){
+    document.getElementById("userPicture").style.borderRadius = "50vw";
+  }
+)}; 
+}
