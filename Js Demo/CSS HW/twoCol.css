@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.leftCol {
+    background-color: cadetblue;
+    width: 70%;
+    float: left;
+}
+
+.rightCol {
+    background-color: chartreuse;
+    float: right;
+    width: 30%;
+}
+
+.image{
+    max-width: 30vw;
+}
+
+@media only screen and (max-width: 700px){
+    .rightCol{
+        background-color: cyan;
+        float: none;
+        width: 100%;
+    }
+    .leftCol{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+}

@@ -13,3 +13,7 @@ function wait(){
         }
     })
 }
+
+console.log(wait());
+
+// Did not log the bigMulti fuction, not sure why
