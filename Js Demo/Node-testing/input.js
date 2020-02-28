@@ -16,13 +16,29 @@
 
 // const rl = require('readline').createInterface(process.stdin, process.stdout);
 
+// module.exports = {
+//     input(rl){
+//         const promise = new Promise(resolve => {
+//             let input;
+//             resolve(rl.on('line', userInput => {
+//                 return userInput;
+//             })
+//         });
+//         }
+// }
+// above is first try
+
+const rl = require('readline').createInterface(process.stdin, process.stdout);
+
 module.exports = {
-    input(rl){
+    input(promt) {
         const promise = new Promise(resolve => {
-            let input;
-            resolve(rl.on('line', userInput => {
-                return userInput;
-            })
-        });
-        }
+            rl.setPrompt(prompt);
+        rl.prompt();
+        let input;
+        rl.on('line', userInput => {
+            input = userInput;
+        })
+        })
+    }
 }
