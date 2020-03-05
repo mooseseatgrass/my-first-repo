@@ -19,3 +19,4 @@ Left side  | Right side
 Knifes     | Spoons
 Plates     | Cups
 
+#### DELET ME LATER: Hey I couldn't find the cmd or wait exercises, let me know if they are somewhere else --Cheers Harcourt 
