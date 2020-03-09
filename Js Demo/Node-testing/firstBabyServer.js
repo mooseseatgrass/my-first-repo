@@ -12,6 +12,7 @@ const port = 8080;
  * solution that has error handling for a 500 or a 404
  */
 //get rid of first write/read, add another if to go to / or home page
+<<<<<<< HEAD
 // const server = http.createServer((req, res) => {
 //         res.writeHead(200, { 'Content-Type': 'text/html' });
 //         fs.readFile('hello.html', function(error, data){ 
@@ -30,6 +31,47 @@ const port = 8080;
 //             res.end();
 //         }) 
 // });
+=======
+const server = http.createServer((req, res) => {
+        // res.writeHead(200, { 'Content-Type': 'text/html' });
+        // fs.readFile('hello.html', function(error, data){ 
+        //     if(req.url === 'about'){
+        //         fs.readFile('about.html', function(error, data){
+        //             if(error) {
+        //                 console.log(error);
+        //             } else {
+        //                 res.writeHead(200, { 'Content-Type': 'text/html' });
+        //                 res.end(data);
+        //             }
+                
+        //         });
+        //     }
+        //     else if(error){
+        //         res.writeHead(404);
+        //         res.write('Error: File not found');
+        //     } else {
+        //         res.write(data);
+        //     } 
+        //     res.end();
+        // }) 
+        if(req.url == '/about') {
+            fs.readFile(path.join(__dirname, 'about.html'), (err, content) => {
+                if (err) {
+                    res.writeHead(500);
+                    res.end(`OHH SHIT`);
+                } else {
+                    res.writeHead(200, {'Content-Type': 'text/html'});
+                    res.end(content);
+                }
+            })
+        } else {
+            fs.readFile('hello.html', (err, content) => {
+                res.writeHead(200, {'Content-Type': 'text/html'});
+                res.end(content);
+            })
+        }
+});
+>>>>>>> e8becd18789b3337d6713249950f6e7255f67a9f
 
 const server = http.createServer((req, res) => {
     let filePath = path.join(__dirname, req.url === '/' ? 'hello.html' : req.url);
