@@ -13,22 +13,43 @@ const port = 8080;
  */
 //get rid of first write/read, add another if to go to / or home page
 const server = http.createServer((req, res) => {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.readFile('hello.html', function(error, data){ 
-            if(req.url === '/about'){
-                fs.readFile('about.html', function(data){
-                res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.write(data);
-                });
-            }
-            else if(error){
-                res.writeHead(404);
-                res.write('Error: File not found');
-            } else {
-                res.write(data);
-            } 
-            res.end();
-        }) 
+        // res.writeHead(200, { 'Content-Type': 'text/html' });
+        // fs.readFile('hello.html', function(error, data){ 
+        //     if(req.url === 'about'){
+        //         fs.readFile('about.html', function(error, data){
+        //             if(error) {
+        //                 console.log(error);
+        //             } else {
+        //                 res.writeHead(200, { 'Content-Type': 'text/html' });
+        //                 res.end(data);
+        //             }
+                
+        //         });
+        //     }
+        //     else if(error){
+        //         res.writeHead(404);
+        //         res.write('Error: File not found');
+        //     } else {
+        //         res.write(data);
+        //     } 
+        //     res.end();
+        // }) 
+        if(req.url == '/about') {
+            fs.readFile(path.join(__dirname, 'about.html'), (err, content) => {
+                if (err) {
+                    res.writeHead(500);
+                    res.end(`OHH SHIT`);
+                } else {
+                    res.writeHead(200, {'Content-Type': 'text/html'});
+                    res.end(content);
+                }
+            })
+        } else {
+            fs.readFile('hello.html', (err, content) => {
+                res.writeHead(200, {'Content-Type': 'text/html'});
+                res.end(content);
+            })
+        }
 });
 
 /* Potential Solution:
