@@ -12,26 +12,25 @@ const port = 8080;
  * solution that has error handling for a 500 or a 404
  */
 //get rid of first write/read, add another if to go to / or home page
-const server = http.createServer((req, res) => {
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        fs.readFile('hello.html', function(error, data){ 
-            if(req.url === '/about'){
-                fs.readFile('about.html', function(data){
-                res.writeHead(200, { 'Content-Type': 'text/html' });
-                res.write(data);
-                });
-            }
-            else if(error){
-                res.writeHead(404);
-                res.write('Error: File not found');
-            } else {
-                res.write(data);
-            } 
-            res.end();
-        }) 
-});
+// const server = http.createServer((req, res) => {
+//         res.writeHead(200, { 'Content-Type': 'text/html' });
+//         fs.readFile('hello.html', function(error, data){ 
+//             if(req.url === '/about'){
+//                 fs.readFile('about.html', function(data){
+//                 res.writeHead(200, { 'Content-Type': 'text/html' });
+//                 res.write(data);
+//                 });
+//             }
+//             else if(error){
+//                 res.writeHead(404);
+//                 res.write('Error: File not found');
+//             } else {
+//                 res.write(data);
+//             } 
+//             res.end();
+//         }) 
+// });
 
-/* Potential Solution:
 const server = http.createServer((req, res) => {
     let filePath = path.join(__dirname, req.url === '/' ? 'hello.html' : req.url);
 
@@ -50,7 +49,6 @@ const server = http.createServer((req, res) => {
         }
     })
 });
-*/
 
 
 server.listen(port, (error) =>{

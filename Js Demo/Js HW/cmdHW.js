@@ -1,23 +1,23 @@
-var multi = function(a, b){
+var multi = (a, b) => {
     return a * b;
 }
 
-console.log(multi(6,8));
-console.log("hello");
+// console.log(multi(6,8));
+// console.log("hello");
 
 module.exports = multi;
 
-// function bigMulti (){
-//     setTimeout(() => {
-//     return 38234798 * 382724;
-//     }, 2000);
-// } could not get the timeout to work
+function bigMulti (){
+    setTimeout(() => {
+        return 38234798 * 382724;
+    }, 2000);
+} 
 
-function bigMulti(){
-    let c = 78974939
-    let d = 847937903
-    return c * d;
-}
+// function bigMulti(){
+//     let c = 78974939
+//     let d = 847937903
+//     return c * d;
+// }
 module.exports = bigMulti;
 // Function to move to app.js
 // function wait(){
@@ -30,4 +30,4 @@ module.exports = bigMulti;
 //     })
 // }
 
-console.log(bigMulti());
+//console.log(bigMulti());
